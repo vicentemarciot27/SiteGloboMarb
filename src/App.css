@@ -1,38 +1,465 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap');
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: Inter;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    height: 124px;
+    width: 1320px;
+    left: 300px;
+    top: 0px;
+    border-radius: 0px;
+    z-index: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.linha1-esquerda {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 47px;
+    width: 540px;
+    left: 36px;
+    top: 17px;
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.2px;
+    text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.menutexto {
+    margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linha1-direita {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 47px;
+    width: 540px;
+    left: 747px;
+    top: 17px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.21px;
+    text-align: left;
+}
+
+.ContaGlobo {
+    position: absolute;
+    right: 100px;
+}
+
+.busca {
+    position: absolute;
+    right: 0px;
+}
+
+.lupa2 {
+    position: relative;
+    left: -5px;
+    top: 2px;
+}
+
+.linha2 {
+    position: absolute;
+    top: 91px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    text-align: center;
+
+}
+
+.g1verm {
+    color: rgba(196, 23, 12, 1);
+    margin-left: 36px;
+}
+
+.ogloboazul {
+    color: rgba(30, 76, 154, 1);
+    margin-left: 80.85px;
+}
+
+.velorverdesc {
+    color: rgba(0, 103, 103, 1);
+    margin-left: 80.85px;
+}
+
+.geverd {
+    color: rgba(6, 170, 72, 1);
+    margin-left: 80.85px;
+}
+
+.cartolaamar {
+    color: rgba(255, 116, 0, 1);
+    margin-left: 80.85px;
+}
+
+.globoplayverm {
+    color: rgba(251, 2, 52, 1);
+    margin-left: 80.85px;
+}
+
+.gshowlar {
+    color: rgba(255, 103, 0, 1);
+    margin-left: 80.85px;
+}
+
+.quempret {
+    color: rgba(51, 51, 51, 1);
+    margin-left: 80.85px;
+}
+
+.receitasrox {
+    color: rgba(165, 20, 125, 1);
+    margin-left: 80.85px;
+}
+
+.gigagloob {
+    color: rgba(0, 196, 162, 1);
+    margin-left: 80.85px;
+}
+
+.vlcont {
+    border-left: 1px solid rgba(128, 128, 128, 0.15);
+    height: 40px;
+    position: fixed;
+    right:393px;
+    top: 20px;
+    z-index: 100;
+}
+
+.vlmenu {
+    border-left: 1px solid rgba(128, 128, 128, 0.15);
+    height: 40px;
+    position: fixed;
+    left: 416px;
+    top: 20px;
+    z-index: 100;
+}
+
+.grh1 {
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    width: 100%;
+    position: fixed;
+    top: 123px;
+    z-index: 100;
+}
+
+.grh2 {
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 80px;
+    z-index: 100;
+}
+
+.manchetes {
+    position: absolute;
+    /* background-color: rgba(228, 255, 19, 0.368); */
+    height: 957px;
+    width: 1250px;
+    left: calc((100vw - 1250px)/2);
+    top: 154px;
+    z-index: -1;
+    display: flex;
+}
+
+.mancprinc {
+    color: rgba(196, 23, 12, 1);
+    font-family: Inter;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -3px;
+    text-align: left;
+
+}
+
+.mancprinc {
+    position: absolute;
+    height: 212px;
+    width: 622px;
+    left: 0px;
+    top: -6px;
+
+}
+
+.sttlprinc {
+    flex-wrap: wrap;
+    position: absolute;
+    height: 85px;
+    width: 570px;
+    left: 0px;
+    top: 210px;
+    border-radius: 0px;
+    display: flex;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    text-align: left;
+
+
+}
+
+.reddot {
+    content: "";
+    position: relative;
+    margin: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(196, 23, 12, 1);
+}
+
+.newline {
+    content: "";
+    flex-basis: 100%;
+    height: 0;
+}
+
+.submanchete_main {
+    position: relative;
+    top: -21px;
+    left: 18px;
+}
+
+.grh3 {
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    width: 618px;
+    position: absolute;
+    top: 300px;
+    z-index: 100;
+}
+
+.blackdot1 {
+    position: absolute;
+    z-index: 500;
+    content: "";
+    margin: 8px;
+    margin-left: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.mansec {
+    height: 632px;
+    width: 624px;
+    left: 0px;
+    top: 325px;
+    border-radius: 0px;
+    position: absolute;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.silverinhacorno {
+    height: 300px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.spline {
+    width: 280px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.txtmanc1 {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: rgba(196, 23, 12, 1);
+    width: 250px;
+    height: 80px;
+    box-sizing: content-box;
+}
+
+.submanc1 {
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: rgba(47, 49, 52, 1);
+    width: 250px;
+    box-sizing: content-box;
+}
+
+.noticia1 {
+    width: 300px;
+    box-sizing: content-box;
+}
+
+.txtmanc2 {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: rgba(196, 23, 12, 1);
+    width: 280px;
+    height: 80px;
+    box-sizing: content-box;
+}
+
+.noticia3 {
+    position: absolute;
+    top: 480px;
+}
+
+.indianocorno {
+    height: 150px;
+    position: relative;
+    width: 250px;
+    border-radius: 12px;
+    clip: rect(0px, 100px, 100px, 0px);
+}
+
+#txtmanc3 {
+    position: absolute;
+    top: 40px;
+    left: 270px;
+}
+
+.grh4 {
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    width: 615px;
+    position: absolute;
+    top: 790px;
+    z-index: 10000;
+}
+
+.vlct {
+    border-left: 1px solid rgba(128, 128, 128, 0.15);
+    height: 920px;
+    position: absolute;
+    left: 49%;
+    z-index: 10000;
+    top: 20px;
+}
+
+.esportes {
+    position: absolute;
+    width: 250px;
+    height: 957px;
+    left: 52%;
+    top: 0%;
+}
+
+.popotao {
+    width: 250px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.txtesp {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: rgba(6, 170, 72, 1);
+}
+
+.greendot1 {
+    position: absolute;
+    z-index: 8000000;
+    content: "";
+    margin: 8px;
+    margin-left: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(6, 170, 72, 1);
+}
+
+.esportes1 {
+    height: 420px;
+}
+
+.vlct2 {
+    border-left: 1px solid rgba(128, 128, 128, 0.15);
+    height: 920px;
+    position: absolute;
+    left: 74%;
+    z-index: 10000;
+    top: 20px;
+}
+
+.fofocas {
+    position: absolute;
+    width: 300px;
+    height: 957px;
+    left: 76%;
+    top: 0%;
+}
+
+.orangedot1 {
+    position: absolute;
+    z-index: 8000000;
+    content: "";
+    margin: 8px;
+    margin-left: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 103, 0, 1); 
+}
+
+.txtfof {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: rgba(255, 103, 0, 1);
+}
+
+.ind2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+.submanc3 {
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: rgba(47, 49, 52, 1);
+    width: 300px;
+    box-sizing: content-box;
 }
