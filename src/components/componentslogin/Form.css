@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap');
+
+.cinza{
+    color: grey;
+}
+.pequeno{
+    font-size: small;
+}
+
+.azul{
+    color: rgb(0, 60, 255);
+}
+
+.clicavel{
+    cursor: pointer;
+}
+
+.branco{
+    color: #F4F4F4;
+    font-weight: 900;
+}
+
+.fundoazul{
+    background-color: rgb(0, 60, 255);
+    padding: 15px 148px;
+    border-radius: 6px;
+    margin: 30px;
+}
+
+.Esquecido{
+    margin-top: 10px;
+}
+
+.Login h1{
+    font-family: Inter;
+    margin-top: 15%;
+    color: rgb(0, 60, 255);
+    font-size: x-large
+}
+.Login p{
+    text-align: center;
+    width: 200px;
+    font-size: medium;
+}
+
+.inputbox{
+    padding: 10px;
+    padding-right: 200px;
+}
+
+.Forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputbox {
+    text-align: left;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: left;
+  }
+  
+  :-moz-placeholder {
+    text-align: left;
+  }
